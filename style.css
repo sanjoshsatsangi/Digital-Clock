@@ -1,0 +1,78 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes slideInFromTop {
+    from {
+        transform: translateY(-50%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+body {
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background-image: url('123.jpg');
+background-size: cover; 
+background-repeat: no-repeat;
+background-position: center;
+overflow: hidden;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding:10px 20px;
+    text-align: center;
+    animation: slideInFromTop 1s ease forwards;
+}
+header .head {
+    color: aqua;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#clock {
+    font-size: 3rem;
+    font-weight: 1000;
+    text-align: center;
+    padding: 20px; 
+    border-radius: 15px;
+    border: 5px solid aqua;
+    color: aqua;
+    animation: fadeIn 3s ease;
+}
+
+.date {
+    font-size: 1rem;
+    font-weight: normal;
+text-decoration: underline;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    text-align: center;
+    animation: slideInFromBottom 1s ease;
+}
+footer .copyright {
+    color: aqua
+}
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
