@@ -1,4 +1,4 @@
-#Project
+# Project
 ## Digital Clock
 - This project features an elegant digital clock.
 ## Sample:
